@@ -1,0 +1,136 @@
+@import "reset";
+@import "common";
+
+.list-container {
+    li{
+        display: flex;
+        justify-content: space-around;
+        height: 1.87rem;
+    }
+    i{
+        display: block;
+        width: 0.5rem;
+        background: url(../img/no-check.png) no-repeat center;
+        background-size: 0.5rem;
+    }
+    .current i{
+        background: url(../img/check.png) no-repeat center;
+        background-size: 0.5rem;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        padding: 0.16rem 0;
+    }
+    h3{
+        display: flex;
+        justify-content: space-between;
+        color: @fontCol;
+        line-height: 0.44rem;
+    }
+    dt{
+        .font(0.26rem,@fontCol);
+        line-height: 0.44rem;
+    }
+    dd{
+        .font(0.26rem,@fontCol*3);
+        .mulE(0.3rem,2);
+    }
+    button{
+        width: 1.36rem;
+        height: 0.46rem;
+        border:0.02rem solid @orangeCol;
+        border-radius: 0.08rem;
+        .font(0.26rem,@orangeCol);
+    }
+}
+
+.rest-info{
+    position: fixed;
+    top: 0;
+    .wh(100%,100%);
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .head-title{
+        flex: none;
+        display: flex;
+        justify-content: space-between;
+        height: 0.67rem;
+        line-height: 0.67rem;
+        .border(bottom);
+        i:not(.del){
+            align-self: center;
+            height: 0.34rem;
+            line-height: 0.34rem;
+            padding-left: 0.5rem;
+            margin-left: 0.2rem;
+            background: url(../img/olderRest-coins.png) no-repeat;
+            background-size: 1rem;
+        }
+        .del{
+            .wh(0.4rem,0.4rem);
+            background: url(../img/olderRest-coins.png) no-repeat 0 -0.4rem;
+            background-size: 1rem;
+            cursor: pointer;
+        }            
+    }
+    .item-list{
+        font-size: 0.28rem;
+        overflow-y: scroll;
+        li{
+            padding: 0.16rem 0.26rem;
+            .border(bottom);
+        }
+        h3{
+            line-height: 0.4rem;
+        }
+        dl{
+            margin-left: 0.3rem;
+        }
+        dt{
+            line-height: 0.54rem;
+            color: @fontCol*2;
+        }
+        dd{
+            .font(0.26rem,@fontCol*3);
+            .mulE(0.3rem,4);
+        }
+    }
+    .bot{
+        flex: none;
+        display: flex;
+        justify-content: space-around;
+        .wh(100%,0.61rem);
+        .border(top);
+        border-radius: 0 0 0.08rem 0.08rem;
+        background: #e0e0e0;
+        font-size: 0.22rem;
+        li{
+            display: inline-flex;
+            align-items: center;
+            .singleE;
+            max-width: 3.44rem;
+        }
+        i{
+            width: 0.36rem;
+            height: 0.3rem;
+            background: url(../img/olderRest-coins.png) no-repeat;
+            background-position-y: -0.9rem;
+            background-size: 1rem;
+        }
+        .email i{
+            background-position-x: -0.4rem;
+        }
+    }
+}
+.rest-info>li{
+    display: flex;
+    flex-direction: column;
+    .wh(85%,80%);
+    background: @whiteCol;
+    border-radius: 0.08rem;
+}

@@ -1,0 +1,224 @@
+@charset "utf-8";
+/*初始化*/
+body,
+header,
+footer,
+aside,
+nav,
+section,
+article,
+div,
+span,
+i,
+b,
+em,
+strong,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+input,
+select,
+textarea,
+option,
+button,
+th,
+td,
+dl,
+dt,
+dd,
+p,
+form,
+ol,
+label {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+li {
+  list-style: none;
+}
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border: 0;
+  background: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+a {
+  -webkit-touch-callout: none;
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+em,
+i {
+  font-style: normal;
+}
+img {
+  border: 0 none;
+  vertical-align: top;
+}
+html {
+  font-size: 6.25rem;
+}
+body {
+  font-family: "microsoft yahei";
+  margin: 0 auto;
+}
+/*公共*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '.';
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  display: block;
+}
+.singleE {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+body {
+  color: #333;
+  font-size: 0.26rem;
+  background: #f5f5f5;
+}
+a,
+a:hover {
+  color: #333;
+}
+.list-container {
+  margin-top: 0.24rem;
+  border-bottom: #e6e6e6 0.01rem solid;
+  border-top: #e6e6e6 0.01rem solid;
+  box-sizing: border-box;
+  background: #fff;
+}
+.list-container li {
+  height: 0.87rem;
+  line-height: 0.87rem;
+  border-bottom: #e6e6e6 0.01rem solid;
+  box-sizing: border-box;
+}
+.list-container li:last-child {
+  border-bottom: transparent 0.01rem solid;
+  box-sizing: border-box;
+}
+.form-list {
+  padding-left: 0.3rem;
+}
+.form-list .title {
+  display: inline-block;
+  width: 25%;
+  font-size: 0.3rem;
+}
+.form-list li {
+  position: relative;
+}
+.form-list .star {
+  position: absolute;
+  top: 0;
+  left: -0.2rem;
+  color: #aa3919;
+}
+.form-list .radio i {
+  display: inline-block;
+  background: url(../img/radio.png) no-repeat;
+  background-size: 1rem;
+  vertical-align: middle;
+}
+.form-list .radio .radio-check {
+  width: 0.3rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  margin-right: 0.26rem;
+}
+.form-list .radio .current {
+  background-position-x: -0.5rem;
+}
+.form-list .radio .male,
+.form-list .radio .famale {
+  width: 0.3rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  margin-left: 0.14rem;
+  background-position-y: -0.5rem;
+}
+.form-list .radio .famale {
+  background-position-x: -0.5rem;
+}
+.form-list .sex-check {
+  margin-right: 0.6rem;
+}
+.form-list .marriage-check {
+  margin-right: 0.76rem;
+}
+.form-list .time-check {
+  margin-right: 0.2rem;
+}
+.btn button {
+  background: #aa3919;
+  border-radius: 0.08rem;
+  line-height: 0.8rem;
+  font-size: 0.36rem;
+  color: #fff;
+}
+.oneBtn {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  margin: 0 0.3rem;
+}
+.oneBtn button {
+  width: 100%;
+}
+.dbBtn {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+}
+.dbBtn button {
+  width: 40%;
+}
+.dbBtn button:last-child {
+  background: #999999;
+}
+.testIndex-main {
+  margin-top: 0.26rem;
+  padding: 0 0.2rem;
+}
+.testIndex-main img {
+  width: 100%;
+}
+.btn {
+  margin-top: 0.77rem;
+}

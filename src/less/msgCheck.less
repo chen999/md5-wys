@@ -1,0 +1,59 @@
+@import "reset";
+@import "common";
+
+.check-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.24rem;
+    padding: 0 0.24rem;
+    background: @whiteCol;
+    .border(top);
+    .border(bottom);
+    li{
+        line-height: 0.78rem;
+    }
+    li:nth-child(2n){
+        width: 55%;
+    }
+    li:nth-child(2n+1){
+        width: 45%;
+    }
+    label{
+        margin-right: 0.24rem;
+    }
+    span{
+        color: @fontCol*3;
+    }
+}
+
+.list-container{
+    padding: 0 0.3rem;
+    li{
+        display: flex;
+        justify-content: space-between;
+    }
+    span{
+        color: @fontCol*3;
+    }
+    .yellow{
+        color: #f1a122;
+    }
+    
+}
+
+.list-checkContent{
+    margin-top: 0;
+    label{
+        max-width: 4.16rem;//最多16个字
+    }    
+}
+
+h2{
+    margin-left: 0.3rem;
+    line-height: 0.54rem;
+    .font(0.24rem,@fontCol*3);
+}
+
+.btn{
+    margin-top: 0.31rem;
+}

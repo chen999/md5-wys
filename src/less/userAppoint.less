@@ -1,0 +1,62 @@
+@import "reset";
+@import "common";
+
+.list-container{
+    padding-left: 0.9rem;
+    li{
+        position: relative;
+    }
+    i{
+        position: absolute;
+        top: 50%;
+        left: -0.7rem;
+        .wh(0.5rem,0.5rem);
+        margin-top: -0.25rem;
+        background: url(../img/userAppoint-coins.png) no-repeat;
+        background-size: 0.8rem;  
+    }
+    li:nth-child(2){
+        i{
+            background-position-y: -0.6rem;
+        }
+    }
+    li:nth-child(3){
+        i{
+            background-position-y: -1.2rem;
+        }
+    }
+    li:nth-child(4){
+        i{
+            background-position-y: -1.8rem;
+        }
+    }
+    li:nth-child(5){
+        i{
+            background-position-y: -2.4rem;
+        }
+    }
+    li:nth-child(6){
+        i{
+            background-position-y: -3rem;
+        }
+    }
+    a{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0.2rem;
+        padding-right: 0.5rem;
+        background: url(../img/userAppoint-select.png) right center no-repeat;
+        background-size: 0.2rem 0.3rem;
+    }
+    label{
+        max-width: 2.86rem;//最多11个字
+        .singleE;
+    }
+    .select-title{
+        color: #f1a122;
+    }
+}
+
+.btn{
+    margin-top: 2.67rem;
+}

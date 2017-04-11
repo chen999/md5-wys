@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<script type="text/javascript" src="js/fontAuto.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/psyMsg.css"/>
+		<title>心理测评</title>
+		<!--[if  lt IE 9]>
+			<script src="../lib/js/html5.js"></script>
+			<script src="../lib/js/respond.min.js"></script>      
+			<script src="../lib/js/selectivizr.js"></script>    
+			<noscript><link rel="stylesheet" href="[fallback css]" /></noscript>   
+			<script src="../lib/js/PIE.js"></script>   
+		<![endif]-->
+	</head>
+	<body>
+		<form action="">
+			<ul class="list-container form-list">
+				<li>
+					<i class="star">*</i>
+					<lable class="title">姓名</lable>
+					<input type="text" placeholder="请输入您的姓名" />
+				</li>
+				<li>
+					<i class="star">*</i>
+					<lable class="title">性别</lable>
+					<label class="radio sex-check"><i class="radio-check current"></i><input type="hidden" name="sex" value="1" />男<i class="male"></i></label>
+					<label class="radio"><i class="radio-check"></i><input type="hidden" name="sex" value="0"  />女<i class="famale"></i></label>
+				</li>
+				<li>
+					<i class="star">*</i>
+					<lable class="title">年龄</lable>
+					<input type="text" placeholder="请输入您的年龄" />
+				</li>
+				<li>
+					<lable class="title">联系方式</lable>
+					<input type="text" placeholder="请输入您的手机号码" />
+				</li>
+			</ul>
+			<div class="btn oneBtn">
+				<button>下一步</button>
+			</div>
+			
+		</form>
+		
+		<script type="text/javascript" src="../lib/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/radio.js"></script>
+	</body>
+</html>

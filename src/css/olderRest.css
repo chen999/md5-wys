@@ -1,0 +1,373 @@
+@charset "utf-8";
+/*初始化*/
+body,
+header,
+footer,
+aside,
+nav,
+section,
+article,
+div,
+span,
+i,
+b,
+em,
+strong,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+input,
+select,
+textarea,
+option,
+button,
+th,
+td,
+dl,
+dt,
+dd,
+p,
+form,
+ol,
+label {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+li {
+  list-style: none;
+}
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border: 0;
+  background: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+a {
+  -webkit-touch-callout: none;
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+em,
+i {
+  font-style: normal;
+}
+img {
+  border: 0 none;
+  vertical-align: top;
+}
+html {
+  font-size: 6.25rem;
+}
+body {
+  font-family: "microsoft yahei";
+  margin: 0 auto;
+}
+/*公共*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '.';
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  display: block;
+}
+.singleE {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+body {
+  color: #333;
+  font-size: 0.26rem;
+  background: #f5f5f5;
+}
+a,
+a:hover {
+  color: #333;
+}
+.list-container {
+  margin-top: 0.24rem;
+  border-bottom: #e6e6e6 0.01rem solid;
+  border-top: #e6e6e6 0.01rem solid;
+  box-sizing: border-box;
+  background: #fff;
+}
+.list-container li {
+  height: 0.87rem;
+  line-height: 0.87rem;
+  border-bottom: #e6e6e6 0.01rem solid;
+  box-sizing: border-box;
+}
+.list-container li:last-child {
+  border-bottom: transparent 0.01rem solid;
+  box-sizing: border-box;
+}
+.form-list {
+  padding-left: 0.3rem;
+}
+.form-list .title {
+  display: inline-block;
+  width: 25%;
+  font-size: 0.3rem;
+}
+.form-list li {
+  position: relative;
+}
+.form-list .star {
+  position: absolute;
+  top: 0;
+  left: -0.2rem;
+  color: #aa3919;
+}
+.form-list .radio i {
+  display: inline-block;
+  background: url(../img/radio.png) no-repeat;
+  background-size: 1rem;
+  vertical-align: middle;
+}
+.form-list .radio .radio-check {
+  width: 0.3rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  margin-right: 0.26rem;
+}
+.form-list .radio .current {
+  background-position-x: -0.5rem;
+}
+.form-list .radio .male,
+.form-list .radio .famale {
+  width: 0.3rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  margin-left: 0.14rem;
+  background-position-y: -0.5rem;
+}
+.form-list .radio .famale {
+  background-position-x: -0.5rem;
+}
+.form-list .sex-check {
+  margin-right: 0.6rem;
+}
+.form-list .marriage-check {
+  margin-right: 0.76rem;
+}
+.form-list .time-check {
+  margin-right: 0.2rem;
+}
+.btn button {
+  background: #aa3919;
+  border-radius: 0.08rem;
+  line-height: 0.8rem;
+  font-size: 0.36rem;
+  color: #fff;
+}
+.oneBtn {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  margin: 0 0.3rem;
+}
+.oneBtn button {
+  width: 100%;
+}
+.dbBtn {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+}
+.dbBtn button {
+  width: 40%;
+}
+.dbBtn button:last-child {
+  background: #999999;
+}
+.list-container li {
+  display: flex;
+  justify-content: space-around;
+  height: 1.87rem;
+}
+.list-container i {
+  display: block;
+  width: 0.5rem;
+  background: url(../img/no-check.png) no-repeat center;
+  background-size: 0.5rem;
+}
+.list-container .current i {
+  background: url(../img/check.png) no-repeat center;
+  background-size: 0.5rem;
+}
+.list-container .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  padding: 0.16rem 0;
+}
+.list-container h3 {
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+  line-height: 0.44rem;
+}
+.list-container dt {
+  font-size: 0.26rem;
+  color: #333;
+  line-height: 0.44rem;
+}
+.list-container dd {
+  font-size: 0.26rem;
+  color: #999999;
+  max-height: 0.6rem;
+  line-height: 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+}
+.list-container button {
+  width: 1.36rem;
+  height: 0.46rem;
+  border: 0.02rem solid #aa3919;
+  border-radius: 0.08rem;
+  font-size: 0.26rem;
+  color: #aa3919;
+}
+.rest-info {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rest-info .head-title {
+  flex: none;
+  display: flex;
+  justify-content: space-between;
+  height: 0.67rem;
+  line-height: 0.67rem;
+  border-bottom: #e6e6e6 0.01rem solid;
+  box-sizing: border-box;
+}
+.rest-info .head-title i:not(.del) {
+  align-self: center;
+  height: 0.34rem;
+  line-height: 0.34rem;
+  padding-left: 0.5rem;
+  margin-left: 0.2rem;
+  background: url(../img/olderRest-coins.png) no-repeat;
+  background-size: 1rem;
+}
+.rest-info .head-title .del {
+  width: 0.4rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  background: url(../img/olderRest-coins.png) no-repeat 0 -0.4rem;
+  background-size: 1rem;
+  cursor: pointer;
+}
+.rest-info .item-list {
+  font-size: 0.28rem;
+  overflow-y: scroll;
+}
+.rest-info .item-list li {
+  padding: 0.16rem 0.26rem;
+  border-bottom: #e6e6e6 0.01rem solid;
+  box-sizing: border-box;
+}
+.rest-info .item-list h3 {
+  line-height: 0.4rem;
+}
+.rest-info .item-list dl {
+  margin-left: 0.3rem;
+}
+.rest-info .item-list dt {
+  line-height: 0.54rem;
+  color: #666666;
+}
+.rest-info .item-list dd {
+  font-size: 0.26rem;
+  color: #999999;
+  max-height: 1.2rem;
+  line-height: 0.3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+}
+.rest-info .bot {
+  flex: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 0.61rem;
+  line-height: 0.61rem;
+  border-top: #e6e6e6 0.01rem solid;
+  box-sizing: border-box;
+  border-radius: 0 0 0.08rem 0.08rem;
+  background: #e0e0e0;
+  font-size: 0.22rem;
+}
+.rest-info .bot li {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 3.44rem;
+}
+.rest-info .bot i {
+  width: 0.36rem;
+  height: 0.3rem;
+  background: url(../img/olderRest-coins.png) no-repeat;
+  background-position-y: -0.9rem;
+  background-size: 1rem;
+}
+.rest-info .bot .email i {
+  background-position-x: -0.4rem;
+}
+.rest-info > li {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 80%;
+  line-height: 80%;
+  background: #fff;
+  border-radius: 0.08rem;
+}

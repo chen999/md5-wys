@@ -1,0 +1,39 @@
+@import "reset";
+@import "common";
+
+.ques-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.29rem 0.18rem 0;
+    li{
+        border:0.02rem @bdCol solid;
+        border-radius: 0.1rem;
+        margin-bottom: 0.4rem;
+    }
+    h3{
+        margin: 0 0.2rem;
+        padding-left: 0.07rem;
+        .border(bottom);
+        line-height: 0.68rem;
+    }
+    .op{
+        padding: 0 0.24rem 0.22rem;
+        .font(0.26rem,@fontCol*2);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .radio{
+            .wh(1.6rem,0.6rem);
+            border:0.02rem @bdCol solid;
+            border-radius: 0.05rem;
+            text-align: center;
+            margin-top: 0.24rem;
+        }
+        .current{
+            border-color: @orangeCol;
+            color: @orangeCol;
+        }
+    }
+    
+}

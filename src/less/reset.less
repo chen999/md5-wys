@@ -1,0 +1,81 @@
+@charset "utf-8";
+/*初始化*/
+body, header, footer, aside, nav, section, article, div, span, i, b, em, strong, img, h1, h2, h3, h4, h5, h6, a, ul, li, input, select, textarea, option, button, th, td, dl, dt, dd, p, form, ol, label {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;//合并边框
+    border-spacing: 0;
+}
+
+li {
+    list-style: none;
+}
+
+input, button, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    border: 0;
+    background: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+a {
+    -webkit-touch-callout:none;
+    text-decoration: none;
+//  color: @fontCol;
+    outline:none;
+}
+
+a:hover {
+//  color: @fontCol;
+    text-decoration: none;
+}
+
+em,i {
+    font-style: normal;
+}
+
+em {
+//  color: @fontCol;
+}
+
+img {
+    border: 0 none;
+    vertical-align: top;
+}
+
+html { 
+    font-size:6.25rem;
+}
+
+body {
+    font-family: "microsoft yahei";
+//  color: @fontCol;
+//  font-size: 0.3rem;
+    margin: 0 auto;
+//  background: @bgCol;
+}
+
+/*公共*/
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    display: block;
+}
+
